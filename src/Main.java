@@ -4,10 +4,11 @@ public class Main {
 
         System.out.println("File Subprogram Test Runs");
         for(int i=1;i<4;i++) {
-            File.openFile();
-            File.writeToFile(String.valueOf(i));
-            File.closeFile();
+ //           File.openFile();
+  //          File.writeToFile(String.valueOf(i));
+   //         File.closeFile();
         }
+        new Splash();
 
     }
 }
