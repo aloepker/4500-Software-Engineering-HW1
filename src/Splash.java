@@ -53,6 +53,7 @@ import java.awt.event.*;
             contentPane.add(okButton);
 
             setVisible(true);
+
         }
 
     }

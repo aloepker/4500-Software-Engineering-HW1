@@ -1,14 +1,26 @@
-//import File.java;
 public class Main {
     public static void main(String[] args) {
-
-        System.out.println("File Subprogram Test Runs");
-        for(int i=1;i<4;i++) {
- //           File.openFile();
-  //          File.writeToFile(String.valueOf(i));
-   //         File.closeFile();
-        }
         new Splash();
+        File.openFile();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        int response;
+
+
+        do {
+            response = StartingChoice.userStart();
+
+            String usersHand = "user's hand";
+            File.writeToFile(usersHand);
+            File.writeToFile(Integer.toString(response));
+
+        }while(response != 0);
+
+        File.closeFile();
+        ClosingSplash.ClosingSplash();
 
     }
 }
