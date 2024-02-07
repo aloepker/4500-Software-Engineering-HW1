@@ -45,7 +45,7 @@ public class DealCards extends JFrame {
 
         JFrame frame = new JFrame("Image Display");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(600, 200);
+        frame.setSize(400, 200);
 
         // Create four components with images
         Component card1 = createImage(Cards[0]);
